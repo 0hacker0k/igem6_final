@@ -1,0 +1,83 @@
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* border: solid 12px #EA2B1F !important; */
+    /* justify-content: center; */
+    /* align-items: top; */
+}
+.full_size_image{
+    width: 100%;
+}
+.sponsor_body{
+    z-index: 10;
+    width: 100%;
+    padding-bottom: 30%;
+    display:table;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.sponsor_rope{
+    top: 0%;
+    position: absolute;
+    width: 50rem;
+    left: calc(50rem*var(--i));
+    z-index: 2;
+    overflow: hidden;
+}
+.sponsor_card{
+    margin-left: 5%;
+    width: 24%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: calc(30%*var(--i));
+    float: left;
+    z-index: 3;
+}
+/* .loading_jump{
+    animation: ld_jump 1s linear infinite;
+    animation-delay: calc(.1s*var(--i));
+} */
+.sponsor_logo{
+    top: calc(60% - var(--width)/2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    text-align: left;
+    height: var(--width);
+    display: table;
+    z-index: 3;
+}
+.sponsor_paper{
+    top: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    text-align: left;
+    height: 80%;
+    display: table;
+    z-index: 1;
+}
+.sponsor_clip{
+    top: -5%;
+    position: absolute;
+    left: 0;       
+    right: 0;
+    margin: auto; 
+    text-align: left;
+    height: 40%;
+    display: table;
+    z-index: 3;
+}
+@media all and (max-aspect-ratio:1/1){
+    .sponsor_body{
+        padding-bottom: 50%;
+    }
+    .sponsor_card{
+        width: 40%;
+    }
+}
