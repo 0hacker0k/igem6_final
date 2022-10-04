@@ -1,0 +1,309 @@
+<head>
+    <title>wiki</title>
+        <link href="/igem6/css/bootstrap_css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+<meta charset="utf-8">
+<link rel="icon" href="/igem6/img/favicon.ico" sizes="32x32" type="image/png">
+
+<link rel="stylesheet" media="all" href="/igem6/css/main.css">
+<link rel="stylesheet" media="all" href="/igem6/css/arrangetest.css">    <link rel="stylesheet" media="all" href="/igem6/css/common.css">
+    
+</head>
+
+<body onload="load_finish();">
+    <script>
+    function in_bar(id){};
+    function out_bar(id){};
+    function click_bar(id){};
+</script>
+
+<header class="mid_size navbar navbar-light" id="navbar">
+    <div class="topbar main-bg-color" id="normal_nav">
+        <div class="logo d-inline-flex p-2 bd-highlight" id="logo">
+            <a href="https://www.google.com/">
+                <img src="/igem6/img/brand.png" alt="logo" class="brand">
+            </a>
+        </div>
+        <!-- <input type="checkbox" name="" id="menu_control"> -->
+        <div class="nav" id="nav">
+            <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown top_nav">
+            
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Team</button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
+                </div>
+            </div>
+            
+            <div onclick="click_bar('myDropdown2')" onmouseout="out_bar('myDropdown2')" onmouseover="in_bar('myDropdown2')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Project</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                    <a href="#" class="dropdown-content_list click">Design</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar('myDropdown3')" onmouseout="out_bar('myDropdown3')" onmouseover="in_bar('myDropdown3')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Labwork</button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#" class="dropdown-content_list click">Protocol</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Human Practices</button>
+                <div id="myDropdown4" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                    <a href="#" class="dropdown-content_list click">Web Game</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Notebook</button>
+            
+            </div>
+
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Safety</button>
+            
+            </div>
+
+            <div onclick="click_bar('myDropdown8')" onmouseout="out_bar('myDropdown8')" onmouseover="in_bar('myDropdown8')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Awards</button>
+                <div id="myDropdown8" class="dropdown-content">
+                    <a href="#" class="dropdown-content_list click">Medals</a>
+                    <a href="#" class="dropdown-content_list click">Judging Form</a>
+                </div>
+            </div>
+
+            <div onclick="click_bar('myDropdown9')" onmouseout="out_bar('myDropdown9')" onmouseover="in_bar('myDropdown9')" class="dropdown dropdown_rwd">
+                <button class="dropbtn click"><img class="click" src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></button>
+                
+            </div>
+            
+            <!-- <a class="hamBar" href="#"><img src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></a> -->
+        </div>
+    </div>
+    
+    <div class="down-nav mid_size">
+        <div id="myDropdown9" class="a-right">
+            <div onclick="change_list(1)" class="dropdown-content_list2 click">Team</div>
+            <div onclick="change_list(2)" class="dropdown-content_list2 click">Project</div>
+            <div onclick="change_list(3)" class="dropdown-content_list2 click">Labwork</div>
+            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practices</div>
+            <div onclick="change_list(5)" class="dropdown-content_list2 click">Notebook</div>
+            <div onclick="change_list(6)" class="dropdown-content_list2 click">Safety</div>
+            <div onclick="change_list(8)" class="dropdown-content_list2 click">Awards</div>
+        </div>
+        <div class="nav_rwd sub_nav_rwd" style="display:table;">
+            <div id="mylist1" class="dropdown-content nav_rwd">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
+            </div>
+            <div id="mylist2" class="dropdown-content nav_rwd">
+                <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                <a href="#" class="dropdown-content_list click">Design</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
+            </div>
+            <div id="mylist3" class="dropdown-content nav_rwd">
+                <a href="#" class="dropdown-content_list click">Protocol</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
+            </div>
+            <div id="mylist4" class="dropdown-content nav_rwd">
+            <div id="myDropdown4" class="dropdown-content">
+                <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                <a href="#" class="dropdown-content_list click">Web Game</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
+            </div>
+            <div id="mylist8" class="dropdown-content nav_rwd">
+                <a href="#" class="dropdown-content_list2 click">Medals</a>
+                <a href="#" class="dropdown-content_list2 click">Judging Form</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</header>
+
+<div id="blank_top" style="height:115px;"></div>
+<style id="nav_style">
+
+</style>
+
+    <div id="loading" class="align-items-center loading">
+    <div class="align-items-center loading_content">
+        <div class="loading_text loading_jump" style="--i:1">P</div>
+        <div class="loading_text loading_jump" style="--i:2">A</div>
+        <div class="loading_text loading_jump" style="--i:3">C</div>
+        <div class="loading_circle" style="--i:4" role="status" aria-hidden="true"></div>
+        <div class="loading_text loading_jump" style="--i:5">m</div>
+        <div class="loading_text loading_jump" style="--i:6">e</div>
+        <div class="loading_text loading_jump" style="--i:7">g</div>
+        <div class="loading_text loading_jump" style="--i:8">a</div>
+        <div class="loading_text loading_jump" style="--i:9">.</div>
+        <div class="loading_text loading_jump" style="--i:10">.</div>
+        <div class="loading_text loading_jump" style="--i:11">.</div>
+    </div>
+</div>    <img class="full_size_image" src="/igem6/img/implementation/banner-implementation.png" alt=""> 
+    
+    <div class="overview justify-content-around">
+        <div class="col-7">
+            <div id="1" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Implementation</h1>
+            </div>
+            <p>
+                Being the most notorious, life-taking disease in this era, the Cardiovascular disease ( CVD ) issue is definitely urged to be resolved. 
+            </p>
+            <p>
+                To prevent CVD, we hope to use synthetic biology to produce pure Eicosapentaenoic acid ( EPA ) supplements serving as the uncontaminated, effective alternative. Applying this idea to reality, we had been challenged by many other experts. With their professional suggestions, we can shift the naive idea into a comprehensive resolution that can address the problem properly. In light of the marketing idea, we also plan to create an enhanced version of our product form to suit the market more.
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="article">
+        <div class="in_center">
+            <div id="2" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Clinical Studies</h1>
+            </div>
+            <p>
+                &emsp;&emsp;Let's start with the mechanism of how EPA reduces the chance of CVD. The major cause of CVD is Atherosclerosis, which is caused by atheromas. When the endothelium cells of blood vessels get injured, fatty acids like low-density lipid ( LDL ) and cholesterol accumulates and forms atheromatous plaque, which leads to vascular sclerosis and causes the CVD further. EPA can reduce such a situation. According to the reference, EPA can induce the enzymes  producing the substances which can relax the smooth muscle cell and provide anti-inflammatory action, leading to the reduction of LDL, so the occurrence of CVD will decrease.
+            </p>
+            <br>
+            <div id="3" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Target User</h1>
+            </div>
+            <p>
+                &emsp;&emsp;According to the statistical data of WHO, in 2021, there were 32% of the deaths caused by CVD in the world. In the meanwhile, in Taiwan, there were more than 42 thousand people dead because of CVD, only next to cancer. So the problem of CVD cannot be underestimated. The common symptom of CVD include: 
+            </p>
+            <ul>
+                <li class="biggerli">
+                    Chest pain, chest tightness, chest pressure and chest discomfort (angina)
+                </li>
+                <li class="biggerli">
+                    Shortness of breath
+                </li>
+                <li class="biggerli">
+                    Pain in the neck, jaw, throat, upper belly area or back
+                </li>
+                <li class="biggerli">
+                    Pain, numbness, weakness or coldness in the legs or arms if the blood vessels in those body areas are narrowed
+                </li>
+            </ul>
+            <p>
+                &emsp;&emsp;When the symptoms above happen, the only way to solve it is seeking emergency healthcare. Luckily, we can do something to prevent us from getting CVD. Generally speaking, the elders are the main group who will get CVD easily. So, we not only held an activity to promote the concepts of CVD prevention, like doing sports more often, consuming less fried food, but also regarded them as our target users. But, CVD is a kind of degenerative disease, which means even if you are young, you still have the chance of getting CVD. As a result, during Open lab activity, we also emphasized the importance of CVD.
+            </p>
+            <br>
+            <br>
+            
+            <br>
+            <div id="6" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Advantage</h1>
+            </div>
+            <ul>
+                <li>
+                    <h2 class="biggerli">High purity:</h2>
+                    <p>
+                        According to reference, <i>pfa B</i> in the pfa gene can decide the kind of omega-3 bacteria produced. Compared with the fish oil, our PACOmega can more effectively focus on CVD prevention.
+                    </p>
+                </li>
+                <li>
+                    <h2 class="biggerli">Zero contamination of heavy metal and microplastics:</h2>
+                    <p>
+                        Contrast with EPA extracted from fish oil, our PACOmega is extracted from <i>E. coli</i>, which can solve the problem of the contamination of heavy metal and microplastics.
+                    </p>
+                </li>
+                <li>
+                    <h2 class="biggerli">Vegetarian friendly</h2>
+                    <p>
+                        Major EPA source is fish oil, which is inconvenient for vegetarians. Therefore, we provide PACOmega, another source of EPA, when vegetarians reject the EPA from fish oil.
+                    </p>
+                </li>
+            </ul>
+            <div id="6" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Challenge</h1>
+            </div>
+            <p>
+                &emsp;&emsp;According to the reference, we found that bacteria can produce pure EPA. However, the information of the actual production can be hardly found. We considered that the actual production is not big enough to be commercial. So, after making sure the EPA system we design works, we will transform it into the bacteria which is suitable for such work.
+            </p>
+            <div id="6" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Future Work</h1>
+            </div>
+            <p>
+                <ol>
+                    <li class=biggerli>
+                        Keeping on finishing our design, making sure the <i>E. coli</i> can produce EPA and improving production.
+                    </li>
+                    <li class=biggerli>
+                        Transforming our EPA synthy system into the bacteria which is suitable for abundant production.
+                    </li>
+                </ol>
+            </p> 
+            <br>
+            <br>    
+        </div>
+    </div>
+    
+
+
+    <footer class="text-center text-lg-start main-bg-color our_footer">
+    <section class="d-flex justify-content-center p-4">
+        <div class="footer_div">
+            <a href="https://www.facebook.com/ccuigemteam/" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/facebook.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="https://www.instagram.com/ccuigem/" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/instagram.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/twitter.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/youtube.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/gmail.png" alt="" style="height:60px;"></div>
+            </a>
+        </div>
+    </section>
+    <div class="text-center p-2" style="color: #ffffff">
+        Copyright © 2022 
+        <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
+    </div>
+</footer>
+<script src="/igem6/js/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/jquery-3.6.0.min.js"></script>
+<script src="/igem6/js/main.js"></script>    <script src="/igem6/js/common.js"></script>  
+</body>

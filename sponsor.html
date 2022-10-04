@@ -1,85 +1,90 @@
 <head>
     <title>wiki</title>
-        <link href="/~lyang108u/igem6_final/css/bootstrap_css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="/igem6/css/bootstrap_css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
 <meta charset="utf-8">
-<link rel="icon" href="/~lyang108u/igem6_final/img/favicon.ico" sizes="32x32" type="image/png">
+<link rel="icon" href="/igem6/img/favicon.ico" sizes="32x32" type="image/png">
 
-<link rel="stylesheet" media="all" href="/~lyang108u/igem6_final/css/index.css">
-<link rel="stylesheet" media="all" href="/~lyang108u/igem6_final/css/arrangetest.css">    <link rel="stylesheet" media="all" href="/~lyang108u/igem6_final/css/sponsor.css">
+<link rel="stylesheet" media="all" href="/igem6/css/main.css">
+<link rel="stylesheet" media="all" href="/igem6/css/arrangetest.css">    <link rel="stylesheet" media="all" href="/igem6/css/sponsor.css">
 </head>
 <body onload="load_finish();">
-    <header class="mid_size navbar navbar-light" id="navbar">
+    <script>
+    function in_bar(id){};
+    function out_bar(id){};
+    function click_bar(id){};
+</script>
+
+<header class="mid_size navbar navbar-light" id="navbar">
     <div class="topbar main-bg-color" id="normal_nav">
         <div class="logo d-inline-flex p-2 bd-highlight" id="logo">
             <a href="https://www.google.com/">
-                <img src="/~lyang108u/igem6_final/img/brand.png" alt="logo" class="brand">
+                <img src="/igem6/img/brand.png" alt="logo" class="brand">
             </a>
         </div>
         <!-- <input type="checkbox" name="" id="menu_control"> -->
         <div class="nav" id="nav">
             <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown top_nav">
             
-                <button class="dropbtn click"><img class="drop click" src="/~lyang108u/igem6_final/img/drop.png" alt="">Team</button>
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Team</button>
                 <div id="myDropdown1" class="dropdown-content">
-                    <a href="#" class="dropdown-content_list click">Home</a>
-                    <a href="#" class="dropdown-content_list click">Members</a>
-                    <a href="./attribution.html" class="dropdown-content_list click">Attributions</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
                     <a href="#" class="dropdown-content_list click">Sponsors</a>
                 </div>
             </div>
             
             <div onclick="click_bar('myDropdown2')" onmouseout="out_bar('myDropdown2')" onmouseover="in_bar('myDropdown2')" class="dropdown top_nav">
-                <button class="dropbtn click"><img class="drop click" src="/~lyang108u/igem6_final/img/drop.png" alt="">Project</button>
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Project</button>
                 <div id="myDropdown2" class="dropdown-content">
-                    <a href="#" class="dropdown-content_list click">Description</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
                     <a href="#" class="dropdown-content_list click">Design</a>
-                    <a href="#" class="dropdown-content_list click">Implementation</a>
-                    <a href="#" class="dropdown-content_list click">Entrepreneurship</a>
-                    <a href="#" class="dropdown-content_list click">Contribution</a>
-                    <a href="#" class="dropdown-content_list click">Improvement</a>
-                    <a href="#" class="dropdown-content_list click">Proof of Concept</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
                 </div>
 
             </div>
 
             <div onclick="click_bar('myDropdown3')" onmouseout="out_bar('myDropdown3')" onmouseover="in_bar('myDropdown3')" class="dropdown top_nav">
-                <button class="dropbtn click"><img class="drop click" src="/~lyang108u/igem6_final/img/drop.png" alt="">Labwork</button>
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Labwork</button>
                 <div id="myDropdown3" class="dropdown-content">
                     <a href="#" class="dropdown-content_list click">Protocol</a>
-                    <a href="#" class="dropdown-content_list click">Engineering</a>
-                    <a href="#" class="dropdown-content_list click">Measurement</a>
-                    <a href="#" class="dropdown-content_list click">Model</a>
-                    <a href="#" class="dropdown-content_list click">Result</a>
-                    <a href="#" class="dropdown-content_list click">Part</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
                 </div>
 
             </div>
 
             <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown top_nav">
-                <button class="dropbtn click"><img class="drop click" src="/~lyang108u/igem6_final/img/drop.png" alt="">Human Practice</button>
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Human Practices</button>
                 <div id="myDropdown4" class="dropdown-content">
-                    <a href="#" class="dropdown-content_list click">Integrated Human Practice</a>
-                    <a href="#" class="dropdown-content_list click">Education</a>
-                    <a href="#" class="dropdown-content_list click">Science Communication</a>
-                    <a href="#" class="dropdown-content_list click">Collaboration</a>
-                    <a href="#" class="dropdown-content_list click">Partnership</a>
-                    <a href="#" class="dropdown-content_list click">Inclusivity</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                    <a href="#" class="dropdown-content_list click">Web Game</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
                 </div>
 
             </div>
 
             <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
-                <button class="dropbtn click"><img class="drop click" src="/~lyang108u/igem6_final/img/drop.png" alt="">Notebook</button>
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Notebook</button>
             
             </div>
 
             <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
-                <button class="dropbtn click"><img class="drop click" src="/~lyang108u/igem6_final/img/drop.png" alt="">Safety</button>
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Safety</button>
             
             </div>
 
             <div onclick="click_bar('myDropdown8')" onmouseout="out_bar('myDropdown8')" onmouseover="in_bar('myDropdown8')" class="dropdown top_nav">
-                <button class="dropbtn click"><img class="drop click" src="/~lyang108u/igem6_final/img/drop.png" alt="">Awards</button>
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Awards</button>
                 <div id="myDropdown8" class="dropdown-content">
                     <a href="#" class="dropdown-content_list click">Medals</a>
                     <a href="#" class="dropdown-content_list click">Judging Form</a>
@@ -87,11 +92,11 @@
             </div>
 
             <div onclick="click_bar('myDropdown9')" onmouseout="out_bar('myDropdown9')" onmouseover="in_bar('myDropdown9')" class="dropdown dropdown_rwd">
-                <button class="dropbtn click"><img class="click" src="/~lyang108u/igem6_final/img/fa-bars.png" alt="" style="width: 40px;"></button>
+                <button class="dropbtn click"><img class="click" src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></button>
                 
             </div>
             
-            <!-- <a class="hamBar" href="#"><img src="/~lyang108u/igem6_final/img/fa-bars.png" alt="" style="width: 40px;"></a> -->
+            <!-- <a class="hamBar" href="#"><img src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></a> -->
         </div>
     </div>
     
@@ -100,42 +105,42 @@
             <div onclick="change_list(1)" class="dropdown-content_list2 click">Team</div>
             <div onclick="change_list(2)" class="dropdown-content_list2 click">Project</div>
             <div onclick="change_list(3)" class="dropdown-content_list2 click">Labwork</div>
-            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practice</div>
+            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practices</div>
             <div onclick="change_list(5)" class="dropdown-content_list2 click">Notebook</div>
             <div onclick="change_list(6)" class="dropdown-content_list2 click">Safety</div>
             <div onclick="change_list(8)" class="dropdown-content_list2 click">Awards</div>
         </div>
         <div class="nav_rwd sub_nav_rwd" style="display:table;">
             <div id="mylist1" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Home</a>
-                <a href="#" class="dropdown-content_list2 click">Members</a>
-                <a href="#" class="dropdown-content_list2 click">Attributions</a>
-                <a href="#" class="dropdown-content_list2 click">Sponsors</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
             </div>
             <div id="mylist2" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Description</a>
-                <a href="#" class="dropdown-content_list2 click">Design</a>
-                <a href="#" class="dropdown-content_list2 click">Implementation</a>
-                <a href="#" class="dropdown-content_list2 click">Entrepreneurship</a>
-                <a href="#" class="dropdown-content_list2 click">Contribution</a>
-                <a href="#" class="dropdown-content_list2 click">Improvement</a>
-                <a href="#" class="dropdown-content_list2 click">Proof of Concept</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                <a href="#" class="dropdown-content_list click">Design</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
             </div>
             <div id="mylist3" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Protocol</a>
-                <a href="#" class="dropdown-content_list2 click">Engineering</a>
-                <a href="#" class="dropdown-content_list2 click">Measurement</a>
-                <a href="#" class="dropdown-content_list2 click">Model</a>
-                <a href="#" class="dropdown-content_list2 click">Result</a>
-                <a href="#" class="dropdown-content_list2 click">Part</a>
+                <a href="#" class="dropdown-content_list click">Protocol</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
             </div>
             <div id="mylist4" class="dropdown-content nav_rwd">
-                <a href="#" class="dropdown-content_list2 click">Integrated Human Practice</a>
-                <a href="#" class="dropdown-content_list2 click">Education</a>
-                <a href="#" class="dropdown-content_list2 click">Science Communication</a>
-                <a href="#" class="dropdown-content_list2 click">Collaboration</a>
-                <a href="#" class="dropdown-content_list2 click">Partnership</a>
-                <a href="#" class="dropdown-content_list2 click">Inclusivity</a>
+            <div id="myDropdown4" class="dropdown-content">
+                <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                <a href="#" class="dropdown-content_list click">Web Game</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
             </div>
             <div id="mylist8" class="dropdown-content nav_rwd">
                 <a href="#" class="dropdown-content_list2 click">Medals</a>
@@ -166,69 +171,101 @@
         <div class="loading_text loading_jump" style="--i:10">.</div>
         <div class="loading_text loading_jump" style="--i:11">.</div>
     </div>
-</div>    <img class="full_size_image" src="/~lyang108u/igem6_final/img/human/sponsors_banner.jpg" alt=""> 
+</div>    <img class="full_size_image" src="/igem6/img/human/sponsors_banner.jpg" alt=""> 
     <div class="sponsor_body" data-id="sponsor_1" data-speed="2">
-        <img class="sponsor_rope" style="--i:0" src="/~lyang108u/igem6_final/img/sponsor/rope.png" alt="">
-        <img class="sponsor_rope" style="--i:1" src="/~lyang108u/igem6_final/img/sponsor/rope.png" alt="">
+        <img class="sponsor_rope" style="--i:0" src="/igem6/img/sponsor/rope.png" alt="">
+        <img class="sponsor_rope" style="--i:1" src="/igem6/img/sponsor/rope.png" alt="">
         <!-- a chunk -->
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="/~lyang108u/igem6_final/img/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="/~lyang108u/igem6_final/img/sponsor/paper_white.png" alt="">
-            <img class="sponsor_logo" style="--width:50%" src="/~lyang108u/igem6_final/img/brand.png" alt="">
+            <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="/igem6/img/brand.png" alt="">
         </div>
         <!--  -->
     </div>
     <div class="sponsor_body" data-id="sponsor_2" data-speed="2">
-        <img class="sponsor_rope" style="--i:0" src="/~lyang108u/igem6_final/img/sponsor/rope.png" alt="">
-        <img class="sponsor_rope" style="--i:1" src="/~lyang108u/igem6_final/img/sponsor/rope.png" alt="">
+        <img class="sponsor_rope" style="--i:0" src="/igem6/img/sponsor/rope.png" alt="">
+        <img class="sponsor_rope" style="--i:1" src="/igem6/img/sponsor/rope.png" alt="">
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="/~lyang108u/igem6_final/img/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="/~lyang108u/igem6_final/img/sponsor/paper_white.png" alt="">
-            <img class="sponsor_logo" style="--width:50%" src="/~lyang108u/igem6_final/img/brand.png" alt="">
+            <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="/igem6/img/brand.png" alt="">
         </div>
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="/~lyang108u/igem6_final/img/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="/~lyang108u/igem6_final/img/sponsor/paper_white.png" alt="">
-            <img class="sponsor_logo" style="--width:50%" src="/~lyang108u/igem6_final/img/human/8e.png" alt="">
+            <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="/igem6/img/human/8e.png" alt="">
         </div>
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="/~lyang108u/igem6_final/img/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="/~lyang108u/igem6_final/img/sponsor/paper_white.png" alt="">
-            <img class="sponsor_logo" style="--width:50%" src="/~lyang108u/igem6_final/img/human/5e.png" alt="">
+            <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="/igem6/img/human/5e.png" alt="">
         </div>
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="/~lyang108u/igem6_final/img/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="/~lyang108u/igem6_final/img/sponsor/paper_white.png" alt="">
-            <img class="sponsor_logo" style="--width:50%" src="/~lyang108u/igem6_final/img/human/9a.jpg" alt="">
+            <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="/igem6/img/human/9a.jpg" alt="">
         </div>
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="/~lyang108u/igem6_final/img/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="/~lyang108u/igem6_final/img/sponsor/paper_white.png" alt="">
-            <img class="sponsor_logo" style="--width:50%" src="/~lyang108u/igem6_final/img/human/7a.jpg" alt="">
+            <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="/igem6/img/human/7a.jpg" alt="">
         </div>
         <div class="sponsor_card">
-            <img class="sponsor_clip" src="/~lyang108u/igem6_final/img/sponsor/clip_white.png" alt="">
-            <img class="sponsor_paper" src="/~lyang108u/igem6_final/img/sponsor/paper_white.png" alt="">
-            <img class="sponsor_logo" style="--width:50%" src="/~lyang108u/igem6_final/img/human/4a.jpg" alt="">
+            <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+            <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+            <img class="sponsor_logo" style="--width:50%" src="/igem6/img/human/4a.jpg" alt="">
         </div>
     </div>
+    <div class="sponsor_body" data-id="sponsor_3" data-speed="2">
+        <img class="sponsor_rope" style="--i:0" src="/igem6/img/sponsor/rope.png" alt="">
+        <img class="sponsor_rope" style="--i:1" src="/igem6/img/sponsor/rope.png" alt="">
+        <!-- a chunk -->
+        <div class="sponsor_card">
+            <button type="button" class="sponsor_card_list_button" data-bs-toggle="modal" data-bs-target="#popup1">
+                <img class="sponsor_clip" src="/igem6/img/sponsor/clip_white.png" alt="">
+                <img class="sponsor_paper" src="/igem6/img/sponsor/paper_white.png" alt="">
+                <div class="sponsor_logo" style="--width:50%">Campus Walking</div>
+            </button>
+        </div>
+        
+        <!--  -->
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Campus Walking</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>台糖</p>
+            <p>寶礦力</p>            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close_button" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>   
     <footer class="text-center text-lg-start main-bg-color our_footer">
     <section class="d-flex justify-content-center p-4">
         <div class="footer_div">
             <a href="https://www.facebook.com/ccuigemteam/" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="/~lyang108u/igem6_final/img/facebook.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="/igem6/img/facebook.png" alt="" style="height:60px;"></div>
             </a>
             <a href="https://www.instagram.com/ccuigem/" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="/~lyang108u/igem6_final/img/instagram.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="/igem6/img/instagram.png" alt="" style="height:60px;"></div>
             </a>
             <a href="" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="/~lyang108u/igem6_final/img/twitter.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="/igem6/img/twitter.png" alt="" style="height:60px;"></div>
             </a>
             <a href="https://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="/~lyang108u/igem6_final/img/youtube.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="/igem6/img/youtube.png" alt="" style="height:60px;"></div>
             </a>
             <a href="" class="me-4 text-reset">
-                <div class="fab button_floating"><img src="/~lyang108u/igem6_final/img/gmail.png" alt="" height="50px"></div>
+                <div class="fab button_floating"><img src="/igem6/img/gmail.png" alt="" style="height:60px;"></div>
             </a>
         </div>
     </section>
@@ -237,8 +274,8 @@
         <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
     </div>
 </footer>
-<script src="/~lyang108u/igem6_final/js/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="/~lyang108u/igem6_final/js/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script src="/~lyang108u/igem6_final/js/jquery-3.6.0.min.js"></script>
-<script src="/~lyang108u/igem6_final/js/index.js"></script>    <script src="/~lyang108u/igem6_final/js/sponsor.js"></script>
+<script src="/igem6/js/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/jquery-3.6.0.min.js"></script>
+<script src="/igem6/js/main.js"></script>    <script src="/igem6/js/sponsor.js"></script>
 </body>

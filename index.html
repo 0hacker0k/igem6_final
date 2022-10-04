@@ -1,0 +1,332 @@
+<!doctype html> 
+<head>
+    <title>wiki</title>
+    <meta charset="UTF-8" />
+        <link href="/igem6/css/bootstrap_css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+<meta charset="utf-8">
+<link rel="icon" href="/igem6/img/favicon.ico" sizes="32x32" type="image/png">
+
+<link rel="stylesheet" media="all" href="/igem6/css/main.css">
+<link rel="stylesheet" media="all" href="/igem6/css/arrangetest.css">    <link rel="stylesheet" media="all" href="/igem6/css/index.css">
+</head>
+
+<body onload="load_finish()">
+    <script>
+    function in_bar(id){};
+    function out_bar(id){};
+    function click_bar(id){};
+</script>
+
+<header class="mid_size navbar navbar-light" id="navbar">
+    <div class="topbar main-bg-color" id="normal_nav">
+        <div class="logo d-inline-flex p-2 bd-highlight" id="logo">
+            <a href="https://www.google.com/">
+                <img src="/igem6/img/brand.png" alt="logo" class="brand">
+            </a>
+        </div>
+        <!-- <input type="checkbox" name="" id="menu_control"> -->
+        <div class="nav" id="nav">
+            <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown top_nav">
+            
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Team</button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
+                </div>
+            </div>
+            
+            <div onclick="click_bar('myDropdown2')" onmouseout="out_bar('myDropdown2')" onmouseover="in_bar('myDropdown2')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Project</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                    <a href="#" class="dropdown-content_list click">Design</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar('myDropdown3')" onmouseout="out_bar('myDropdown3')" onmouseover="in_bar('myDropdown3')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Labwork</button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#" class="dropdown-content_list click">Protocol</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Human Practices</button>
+                <div id="myDropdown4" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                    <a href="#" class="dropdown-content_list click">Web Game</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Notebook</button>
+            
+            </div>
+
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Safety</button>
+            
+            </div>
+
+            <div onclick="click_bar('myDropdown8')" onmouseout="out_bar('myDropdown8')" onmouseover="in_bar('myDropdown8')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Awards</button>
+                <div id="myDropdown8" class="dropdown-content">
+                    <a href="#" class="dropdown-content_list click">Medals</a>
+                    <a href="#" class="dropdown-content_list click">Judging Form</a>
+                </div>
+            </div>
+
+            <div onclick="click_bar('myDropdown9')" onmouseout="out_bar('myDropdown9')" onmouseover="in_bar('myDropdown9')" class="dropdown dropdown_rwd">
+                <button class="dropbtn click"><img class="click" src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></button>
+                
+            </div>
+            
+            <!-- <a class="hamBar" href="#"><img src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></a> -->
+        </div>
+    </div>
+    
+    <div class="down-nav mid_size">
+        <div id="myDropdown9" class="a-right">
+            <div onclick="change_list(1)" class="dropdown-content_list2 click">Team</div>
+            <div onclick="change_list(2)" class="dropdown-content_list2 click">Project</div>
+            <div onclick="change_list(3)" class="dropdown-content_list2 click">Labwork</div>
+            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practices</div>
+            <div onclick="change_list(5)" class="dropdown-content_list2 click">Notebook</div>
+            <div onclick="change_list(6)" class="dropdown-content_list2 click">Safety</div>
+            <div onclick="change_list(8)" class="dropdown-content_list2 click">Awards</div>
+        </div>
+        <div class="nav_rwd sub_nav_rwd" style="display:table;">
+            <div id="mylist1" class="dropdown-content nav_rwd">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
+            </div>
+            <div id="mylist2" class="dropdown-content nav_rwd">
+                <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                <a href="#" class="dropdown-content_list click">Design</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
+            </div>
+            <div id="mylist3" class="dropdown-content nav_rwd">
+                <a href="#" class="dropdown-content_list click">Protocol</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
+            </div>
+            <div id="mylist4" class="dropdown-content nav_rwd">
+            <div id="myDropdown4" class="dropdown-content">
+                <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                <a href="#" class="dropdown-content_list click">Web Game</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
+            </div>
+            <div id="mylist8" class="dropdown-content nav_rwd">
+                <a href="#" class="dropdown-content_list2 click">Medals</a>
+                <a href="#" class="dropdown-content_list2 click">Judging Form</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</header>
+
+<div id="blank_top" style="height:115px;"></div>
+<style id="nav_style">
+
+</style>
+
+    <div id="loading" class="align-items-center loading">
+    <div class="align-items-center loading_content">
+        <div class="loading_text loading_jump" style="--i:1">P</div>
+        <div class="loading_text loading_jump" style="--i:2">A</div>
+        <div class="loading_text loading_jump" style="--i:3">C</div>
+        <div class="loading_circle" style="--i:4" role="status" aria-hidden="true"></div>
+        <div class="loading_text loading_jump" style="--i:5">m</div>
+        <div class="loading_text loading_jump" style="--i:6">e</div>
+        <div class="loading_text loading_jump" style="--i:7">g</div>
+        <div class="loading_text loading_jump" style="--i:8">a</div>
+        <div class="loading_text loading_jump" style="--i:9">.</div>
+        <div class="loading_text loading_jump" style="--i:10">.</div>
+        <div class="loading_text loading_jump" style="--i:11">.</div>
+    </div>
+</div>    <div id="map" style="bottom: -100%;">
+        <img id="map_icon" src="/igem6/img/home/heart-icon.png">
+        <img id="epa" src="/igem6/img/drop.png">
+        <img id="go_top" onclick="go_top()" src="/igem6/img/home/go-to-top.png">
+    </div>
+    <div id="bottomleft">
+        <img class="bl-background" src="/igem6/img/home/bottomleft-background.png">
+    </div>
+    <style id="parameter"></style>
+    <div class="page" style="top:200%;" id="page_1">
+        <div class="typesetting_block">
+            <div class="first_page"></div>
+            <img id="team_name" src="/igem6/img/home/team_name.png">
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_2">
+        <img id="team_logo" src="/igem6/img/home/logo.png">
+    </div>
+    <div class="page" style="top:200%;" id="page_3">
+        <img id="earth" src="/igem6/img/home/earth-rotation.gif">
+    </div>
+    <div class="page" style="top:200%;" id="page_4">
+        <img id="map_of_world" src="/igem6/img/home/map-of-world.jpg">
+        <div class="white_background">
+            Cardiovascular disease (CVD) is one of the most severe diseases worldwide. In 2019, an estimated 17.9 million people died from CVD, representing 32% of all global deaths.
+            <a href="###">[1]</a>
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_5">
+        <!-- <img id="team_name" src="/igem6/img/home/team_name.png"> -->
+        <img id="page5_epa" src="/igem6/img/home/page5_epa.png">
+    </div>
+    <div class="page" style="top:200%;" id="page_6">
+        <div class="white_background">
+            The living habits nowadays cause the excess intake of cholesterol from the modern diet,
+            inducing the artery's low-density lipoproteins ( LDL ) accumulation. 
+        </div>
+        <div class="bottomleft">
+            <img class="illustration" id="page5-role1" src="/igem6/img/home/page5-role1.png">
+            <img class="illustration" id="page5-role2" src="/igem6/img/home/page5-role2.png">
+            <img class="illustration" id="page5-role3" src="/igem6/img/home/page5-role3.png">
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_7">
+        <div class="white_background">
+            The LDL accumulation and impeded blood flow damage the arteries, which leads to atherosclerosis, the severe CVD.
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_8">
+        <div class="white_background">
+            Recently, the daily intake of eicosapentaenoic acid (EPA) has been proven to reduce CVD efficiently and severe CVD causes death.
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_9">
+        <div class="white_background">
+            EPA scavenges the reactive oxygen species (ROS) to prevent the oxidative damage of cell membranes and consequently reduces the LDL-caused inflammation and prevents vascular injury.
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_10">
+        <div class="white_background">
+            However, the major source of EPA, marine fishes, is the end consumer in the food chain, and the accumulation of heavy metals and microplastics is not rare in marine fishes. 
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_11">
+        <div class="white_background">
+            Therefore, the development of a new EPA source is necessary to cover future consumption and avoid potential contamination.
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_12">
+        <div id="page_12_white" class="white_background top_block">
+            To generate an EPA supplement without potential contaminants, our team applied synthetic biology to produce pure EPA. 
+        </div>
+        <div id="page_12_content">
+            <div id="information1">
+                <li class="learn_more_title">
+                    Genes form deep-sea bacteria
+                </li>
+                <div id="learn_more_1" class="learn_more" onclick="more_information('learn_more_1','learn_more_1_content','information2')">
+                    <div class="triangle_to_right"></div>Learn more
+                </div>
+                <div id="learn_more_1_content" class="learn_more_content">
+                    The previous research shows that combination of the pfa genes of deep-sea bacteria Moritella marina MP-1 and Shewanella pneumatophori SCRC-2738 can produce EPA in  E. coli.
+                </div>
+            </div>
+            <div id="information2">
+                <li class="learn_more_title">
+                    Gene engineering
+                </li>
+                <div id="learn_more_2" class="learn_more" onclick="more_information('learn_more_2','learn_more_2_content','information1')">
+                    <div class="triangle_to_right"></div>Learn more
+                </div>
+                <div id="learn_more_2_content" class="learn_more_content">
+                    We cloned the pfa A, pfa C, pfa D, and pfa E genes from MP-1, and pfa B gene from SCRC-2738. All these five pfa genes are expressed in E. coli to produce EPA.
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="page" style="top:200%;" id="page_13">
+        <img id="team_logo_2" src="/igem6/img/home/logo.png">
+    </div>
+    <div class="page" style="top:200%;" id="page_14">
+        <div class="typesetting_block">
+            <img id="team_name_2" src="/igem6/img/home/team_name.png">
+        </div>
+    </div>
+    <div id="first_background" class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <img class="background" src="/igem6/img/home/vessel-1.png">
+    <img class="background" src="/igem6/img/home/vessel-2.png">
+    <img class="background" src="/igem6/img/home/vessel-3.png">
+    <img class="background" src="/igem6/img/home/vessel-4.png">
+    <img class="background" src="/igem6/img/home/vessel-5.png">
+    <img class="background" src="/igem6/img/home/vessel-6.png">
+    <img class="background" src="/igem6/img/home/vessel-7.png">
+    <img class="background" src="/igem6/img/home/vessel-8.png">
+    <div class="background"></div>
+    <div class="background"></div>
+    <div class="background"></div>
+    <!-- <div id="final_item"></div> -->
+    <script>
+        var display_mod=1;
+    </script>
+    <footer class="text-center text-lg-start main-bg-color our_footer">
+    <section class="d-flex justify-content-center p-4">
+        <div class="footer_div">
+            <a href="https://www.facebook.com/ccuigemteam/" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/facebook.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="https://www.instagram.com/ccuigem/" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/instagram.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/twitter.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/youtube.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/gmail.png" alt="" style="height:60px;"></div>
+            </a>
+        </div>
+    </section>
+    <div class="text-center p-2" style="color: #ffffff">
+        Copyright © 2022 
+        <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
+    </div>
+</footer>
+<script src="/igem6/js/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/jquery-3.6.0.min.js"></script>
+<script src="/igem6/js/main.js"></script>    <script src="/igem6/js/index.js"></script>
+    <script>close_header();</script>
+</body>

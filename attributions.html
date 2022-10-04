@@ -1,0 +1,775 @@
+<head>
+    <title>wiki</title>
+        <link href="/igem6/css/bootstrap_css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
+<meta charset="utf-8">
+<link rel="icon" href="/igem6/img/favicon.ico" sizes="32x32" type="image/png">
+
+<link rel="stylesheet" media="all" href="/igem6/css/main.css">
+<link rel="stylesheet" media="all" href="/igem6/css/arrangetest.css">    <link rel="stylesheet" media="all" href="/igem6/css/attribution.css">
+</head>
+
+<body onload="load_finish();locate_note();">
+    <script>
+    function in_bar(id){};
+    function out_bar(id){};
+    function click_bar(id){};
+</script>
+
+<header class="mid_size navbar navbar-light" id="navbar">
+    <div class="topbar main-bg-color" id="normal_nav">
+        <div class="logo d-inline-flex p-2 bd-highlight" id="logo">
+            <a href="https://www.google.com/">
+                <img src="/igem6/img/brand.png" alt="logo" class="brand">
+            </a>
+        </div>
+        <!-- <input type="checkbox" name="" id="menu_control"> -->
+        <div class="nav" id="nav">
+            <div onclick="click_bar('myDropdown1')" onmouseout="out_bar('myDropdown1')" onmouseover="in_bar('myDropdown1')" class="dropdown top_nav">
+            
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Team</button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
+                </div>
+            </div>
+            
+            <div onclick="click_bar('myDropdown2')" onmouseout="out_bar('myDropdown2')" onmouseover="in_bar('myDropdown2')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Project</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                    <a href="#" class="dropdown-content_list click">Design</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar('myDropdown3')" onmouseout="out_bar('myDropdown3')" onmouseover="in_bar('myDropdown3')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Labwork</button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#" class="dropdown-content_list click">Protocol</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar('myDropdown4')" onmouseout="out_bar('myDropdown4')" onmouseover="in_bar('myDropdown4')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Human Practices</button>
+                <div id="myDropdown4" class="dropdown-content">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                    <a href="#" class="dropdown-content_list click">Web Game</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
+                </div>
+
+            </div>
+
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Notebook</button>
+            
+            </div>
+
+            <div onclick="click_bar(null)" onmouseout="out_bar(null)" onmouseover="in_bar(null)" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Safety</button>
+            
+            </div>
+
+            <div onclick="click_bar('myDropdown8')" onmouseout="out_bar('myDropdown8')" onmouseover="in_bar('myDropdown8')" class="dropdown top_nav">
+                <button class="dropbtn click"><img class="drop click" src="/igem6/img/drop.png" alt="">Awards</button>
+                <div id="myDropdown8" class="dropdown-content">
+                    <a href="#" class="dropdown-content_list click">Medals</a>
+                    <a href="#" class="dropdown-content_list click">Judging Form</a>
+                </div>
+            </div>
+
+            <div onclick="click_bar('myDropdown9')" onmouseout="out_bar('myDropdown9')" onmouseover="in_bar('myDropdown9')" class="dropdown dropdown_rwd">
+                <button class="dropbtn click"><img class="click" src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></button>
+                
+            </div>
+            
+            <!-- <a class="hamBar" href="#"><img src="/igem6/img/fa-bars.png" alt="" style="width: 40px;"></a> -->
+        </div>
+    </div>
+    
+    <div class="down-nav mid_size">
+        <div id="myDropdown9" class="a-right">
+            <div onclick="change_list(1)" class="dropdown-content_list2 click">Team</div>
+            <div onclick="change_list(2)" class="dropdown-content_list2 click">Project</div>
+            <div onclick="change_list(3)" class="dropdown-content_list2 click">Labwork</div>
+            <div onclick="change_list(4)" class="dropdown-content_list2 click">Human Practices</div>
+            <div onclick="change_list(5)" class="dropdown-content_list2 click">Notebook</div>
+            <div onclick="change_list(6)" class="dropdown-content_list2 click">Safety</div>
+            <div onclick="change_list(8)" class="dropdown-content_list2 click">Awards</div>
+        </div>
+        <div class="nav_rwd sub_nav_rwd" style="display:table;">
+            <div id="mylist1" class="dropdown-content nav_rwd">
+                    <a href="https://2022.igem.wiki/ccu-taiwan/index.html" class="dropdown-content_list click">Home</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/team" class="dropdown-content_list click">Members</a>
+                    <a href="https://2022.igem.wiki/ccu-taiwan/attributions" class="dropdown-content_list click">Attributions</a>
+                    <a href="#" class="dropdown-content_list click">Sponsors</a>
+            </div>
+            <div id="mylist2" class="dropdown-content nav_rwd">
+                <a href="https://2022.igem.wiki/ccu-taiwan/description" class="dropdown-content_list click">Description</a>
+                <a href="#" class="dropdown-content_list click">Design</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/implementation" class="dropdown-content_list click">Implementation</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/contribution" class="dropdown-content_list click">Contribution</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/improve" class="dropdown-content_list click">Improvement</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/proof-of-concept" class="dropdown-content_list click">Proof of Concept</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/sustainable" class="dropdown-content_list click">Sustainable</a>
+            </div>
+            <div id="mylist3" class="dropdown-content nav_rwd">
+                <a href="#" class="dropdown-content_list click">Protocol</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/hardware" class="dropdown-content_list click">Hardware</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/engineering" class="dropdown-content_list click">Engineering</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/results" class="dropdown-content_list click">Results</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/parts" class="dropdown-content_list click">Parts</a>
+            </div>
+            <div id="mylist4" class="dropdown-content nav_rwd">
+            <div id="myDropdown4" class="dropdown-content">
+                <a href="https://2022.igem.wiki/ccu-taiwan/human-practices" class="dropdown-content_list click">Human Practices</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/education" class="dropdown-content_list click">Education</a>
+                <a href="#" class="dropdown-content_list click">Web Game</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/communication" class="dropdown-content_list click">Communication</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/collaborations" class="dropdown-content_list click">Collaborations</a>
+                <a href="https://2022.igem.wiki/ccu-taiwan/partnership" class="dropdown-content_list click">Partnership</a>
+            </div>
+            <div id="mylist8" class="dropdown-content nav_rwd">
+                <a href="#" class="dropdown-content_list2 click">Medals</a>
+                <a href="#" class="dropdown-content_list2 click">Judging Form</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</header>
+
+<div id="blank_top" style="height:115px;"></div>
+<style id="nav_style">
+
+</style>
+
+    <div id="loading" class="align-items-center loading">
+    <div class="align-items-center loading_content">
+        <div class="loading_text loading_jump" style="--i:1">P</div>
+        <div class="loading_text loading_jump" style="--i:2">A</div>
+        <div class="loading_text loading_jump" style="--i:3">C</div>
+        <div class="loading_circle" style="--i:4" role="status" aria-hidden="true"></div>
+        <div class="loading_text loading_jump" style="--i:5">m</div>
+        <div class="loading_text loading_jump" style="--i:6">e</div>
+        <div class="loading_text loading_jump" style="--i:7">g</div>
+        <div class="loading_text loading_jump" style="--i:8">a</div>
+        <div class="loading_text loading_jump" style="--i:9">.</div>
+        <div class="loading_text loading_jump" style="--i:10">.</div>
+        <div class="loading_text loading_jump" style="--i:11">.</div>
+    </div>
+</div>    <img class="full_size_image" src="/igem6/img/attributions/banner-attributions.png" alt=""> 
+    
+    <div class="attribution_card justify-content-around">
+        <div id="attribution_left" class="attribution_left">
+            <div id="nav_note" class="attribution_nav" style="background-image:url('/igem6/img/note_untouch.png')">
+                <div class="attribution_nav_content">
+                    <a href="#1" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Primary Principal Investigator</li></div></a>
+                    <a href="#2" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Secondary Principal Investigators</li></div></a>
+                    <a href="#3" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Instuctor</li></div></a>
+                    <a href="#4" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Leaders</li></div></a>
+                    <a href="#5" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Wet lab</li></div></a>
+                    <a href="#6" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Dry lab</li></div></a>
+                    <a href="#7" onclick="move_note2()"><div class="nav_control nav_control_b"><li>Human practice</li></div></a>
+                    <a href="#8" onclick="move_note2()"><div class="nav_control nav_control_a"><li>Advisors</li></div></a>
+                </div>    
+            </div>
+        </div>
+        <div class="attribution_right">
+            <div id="1" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Primary Principal Investigators</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions101.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Ching-Chieh Weng                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Assistant Professor, Department of Biomedical Sciences</div>Dr. Weng guided us to consider the larger picture and story behind our concept, managed team schedules, and assisted in organizing human practice events.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions102.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Chun-Ying Yu                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Assistant Professor, Department of Biomedical Sciences</div>Dr. Yu contributed to the experimental design, instructed safety requirements, and provided consulting on wet lab experiments and human practice events.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>            <div id="2" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Secondary Principal Investigators</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions201.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Cheng-I Lee                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Lee shared her experience with past iGEM teams and reviewed the technicalities.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions202.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Wing-Yan Chan                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Professor, Department of Biomedical Sciences</div>Dr. Chan provided support for the team concerning judging issues.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions203.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Hau-Ren Chen                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Associate professor, Department of Biomedical Sciences</div>Dr. Chen gave insightful advice on our experimental designs and project feasibility.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions204.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Eugene C. Lin                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Assistant Professor, Department of Chemistry and Biochemistry</div>Dr. Lin helped us in evaluating the viability of our initial ideas and advised on dry lab hardware designs.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>            <div id="3" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Instructors</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions301.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Gerald Rau                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Assistant Professor, Department of Electrical Engineering</div>Dr. G. Rau instructed and reviewed our monthly team presentation, and made corrections on the English of our team wiki, team poster, and promotion video.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions302.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Victoria Rau                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Professor, Graduate Institute of Linguistics</div>Dr. V. Rau instructed and reviewed our monthly team presentation, and gave suggestions on our team wiki, team poster, and promotion video.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions303.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Hsiang-Chiu Wu                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Adjunct Assistant Professor, Department of Mechanical Engineering</div>Dr. Wu instructed us in hardware development, including creating technical drawings, essential machining skills and machine design.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>            <div id="4" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Leaders</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions001.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Chia-Hsieh Kung                        </div>
+                        <div class="card_icon_list">
+                            <image title="leadership" class="card_icon" src="/igem6/img/attributions/leadership.png" /><image title="presentation" class="card_icon" src="/igem6/img/attributions/presentation.png" /><image title="ihp" class="card_icon" src="/igem6/img/attributions/ihp.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Team leader: 
+                <li>The team representative in external activities.</li>
+                <li>Responsible for determining the team’s target, integrating all groups, and coordinating the whole project.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions002.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Yuan-Chi Tsai                        </div>
+                        <div class="card_icon_list">
+                            <image title="leadership" class="card_icon" src="/igem6/img/attributions/leadership.png" /><image title="presentation" class="card_icon" src="/igem6/img/attributions/presentation.png" /><image title="hardware" class="card_icon" src="/igem6/img/attributions/hardware.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Team Co-leader: 
+                <li>Bridge between wet lab and dry lab.</li>
+                <li>Responsible for designing plasmid, and developing the hardware.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions003.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Yun-Chi Chiu                        </div>
+                        <div class="card_icon_list">
+                            <image title="experiment" class="card_icon" src="/igem6/img/attributions/experiment.png" /><image title="ihp" class="card_icon" src="/igem6/img/attributions/ihp.png" /><image title="education" class="card_icon" src="/igem6/img/attributions/education.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Team Co-leader: 
+                <li>Bridge between wet lab and human practice.</li>
+                <li>Responsible for designing the gene expression, assisting with social media, IHP, fundraising and Open Lab activity.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>            <div id="5" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Wet Lab</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions004.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Ting-Hung Chang                        </div>
+                        <div class="card_icon_list">
+                            <image title="leadership" class="card_icon" src="/igem6/img/attributions/leadership.png" /><image title="presentation" class="card_icon" src="/igem6/img/attributions/presentation.png" /><image title="experiment" class="card_icon" src="/igem6/img/attributions/experiment.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Wet Lab leader: 
+                <li>Responsible for scheduling the experiment and coordinating with other groups.</li>
+                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and their protein expression.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions005.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Yu-Chen Huang                        </div>
+                        <div class="card_icon_list">
+                            <image title="presentation" class="card_icon" src="/igem6/img/attributions/presentation.png" /><image title="experiment" class="card_icon" src="/igem6/img/attributions/experiment.png" /><image title="education" class="card_icon" src="/igem6/img/attributions/education.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Wet Lab co-leader: 
+                <li>Assisting wet lab leader.</li>
+                <li>Responsible for cloning pSTV28- <i>pfa B</i> - <i>pfa C</i> - <i>pfa E</i> and their protein expression.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions006.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Chen-Yu Wu                        </div>
+                        <div class="card_icon_list">
+                            <image title="experiment" class="card_icon" src="/igem6/img/attributions/experiment.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i> and their protein expression.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions007.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Chi-Huan Zheng                        </div>
+                        <div class="card_icon_list">
+                            <image title="experiment" class="card_icon" src="/igem6/img/attributions/experiment.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i> and their protein expression.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions008.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Zong-Ying He                        </div>
+                        <div class="card_icon_list">
+                            <image title="experiment" class="card_icon" src="/igem6/img/attributions/experiment.png" /><image title="wiki" class="card_icon" src="/igem6/img/attributions/wiki.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        <li>Responsible for cloning pET28a - <i>AccBC</i> - <i>AccD1E</i> and their protein expression.</li>
+                <li>Responsible for triple antibiotic selection.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions009.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Bo-Qin Wu                        </div>
+                        <div class="card_icon_list">
+                            <image title="slides_editor" class="card_icon" src="/igem6/img/attributions/slides_editor.png" /><image title="experiment" class="card_icon" src="/igem6/img/attributions/experiment.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for cloning pColdI - <i>pfa A</i> - <i>pfa D</i> and their protein expression.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>            <div id="6" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Dry Lab</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions010.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Chi-Yang Lin                        </div>
+                        <div class="card_icon_list">
+                            <image title="leadership" class="card_icon" src="/igem6/img/attributions/leadership.png" /><image title="software" class="card_icon" src="/igem6/img/attributions/software.png" /><image title="hardware" class="card_icon" src="/igem6/img/attributions/hardware.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Dry lab leader: 
+                <li>Responsible for coordinating with other groups and coding the web game, wiki, as well as programing of the machine.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions011.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Si-Ru Zhou                        </div>
+                        <div class="card_icon_list">
+                            <image title="leadership" class="card_icon" src="/igem6/img/attributions/leadership.png" /><image title="wiki" class="card_icon" src="/igem6/img/attributions/wiki.png" /><image title="collaboration" class="card_icon" src="/igem6/img/attributions/collaboration.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Dry lab co-leader: 
+                <li>Responsible for art designing of team wiki and team logo, and proofreading the contents of wiki and social media.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions012.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Hao-Fang Chan                        </div>
+                        <div class="card_icon_list">
+                            <image title="hardware" class="card_icon" src="/igem6/img/attributions/hardware.png" /><image title="wiki" class="card_icon" src="/igem6/img/attributions/wiki.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for developing the hardware and creating the animations.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>            <div id="7" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Human Practice</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions013.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Hao-Yuan Cheng                        </div>
+                        <div class="card_icon_list">
+                            <image title="leadership" class="card_icon" src="/igem6/img/attributions/leadership.png" /><image title="software" class="card_icon" src="/igem6/img/attributions/software.png" /><image title="education" class="card_icon" src="/igem6/img/attributions/education.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Human practice leader: 
+                <li>Responsible for planning the structure of human practice activities, coordinating with other groups and designing the web game.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions014.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Yi-Yun Lee                        </div>
+                        <div class="card_icon_list">
+                            <image title="slides_editor" class="card_icon" src="/igem6/img/attributions/slides_editor.png" /><image title="education" class="card_icon" src="/igem6/img/attributions/education.png" /><image title="wiki" class="card_icon" src="/igem6/img/attributions/wiki.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Human practice co-leader: 
+                <li>Responsible for planning the structure of human practice works, holding Open Lab and fundraising.</li>                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions015.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Peng-Jen Chen                        </div>
+                        <div class="card_icon_list">
+                            <image title="wiki" class="card_icon" src="/igem6/img/attributions/wiki.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for most of the art illustrations and managing the social media accounts.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions016.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Guan-Chen Li                        </div>
+                        <div class="card_icon_list">
+                            <image title="wiki" class="card_icon" src="/igem6/img/attributions/wiki.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for designing and directing the promotion video.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions017.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Yu-Quan Chou                        </div>
+                        <div class="card_icon_list">
+                            <image title="presentation" class="card_icon" src="/igem6/img/attributions/presentation.png" /><image title="ihp" class="card_icon" src="/igem6/img/attributions/ihp.png" /><image title="collaboration" class="card_icon" src="/igem6/img/attributions/collaboration.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for IHP projects.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions018.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Jung-Hsuan Hsiao                        </div>
+                        <div class="card_icon_list">
+                            <image title="education" class="card_icon" src="/igem6/img/attributions/education.png" /><image title="ihp" class="card_icon" src="/igem6/img/attributions/ihp.png" /><image title="collaboration" class="card_icon" src="/igem6/img/attributions/collaboration.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for collaboration and marketing.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions019.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Wei-Chun Fu                        </div>
+                        <div class="card_icon_list">
+                            <image title="education" class="card_icon" src="/igem6/img/attributions/education.png" />                        </div>
+                    </div>
+                    <div class="card_content">
+                        Responsible for campus walking activity.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>            <div id="8" class="title-label-div">
+                <h1 class="title_label" style="background-image:url('/igem6/img/tape.png')">Advisors</h1>
+            </div>
+                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions401.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Chun-Kai Li                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Department of Biomedical Sciences</div>Mr. Li instructed us with web lab experiments and part registry, and assisted us in the Open Lab activity.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions402.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Hong-Fu Liao                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Department of Chemical Engineering</div>Mr. Liao offered suggestions during the project's early brainstorming session.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions403.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Chia-Chia Tsai                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Department of Biomedical Sciences</div>Ms. Tsai gave helpful advice on team organization and external communication.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>                        <div class="card">
+                <div class="card_left">
+                    <image class="lazy card_img" data-src="/igem6/img/attributions/attributions404.jpg" />
+                </div>
+                <div class="card_right">
+                    <div class="card_title">
+                        <image class="name_icon" src="/igem6/img/drop.png" />
+                        <div class="card_name">
+                            Shi-Jie Nga                        </div>
+                        <div class="card_icon_list">
+                                                    </div>
+                    </div>
+                    <div class="card_content">
+                        <div class='graduate'>Department of Psychology</div>Ms. Nga gave helpful advice on team organization and external communication.                    </div>
+                </div>
+                <!-- <h1 class="title-label">Leaders</h1> -->
+            </div>        </div>
+    </div>
+    <footer class="text-center text-lg-start main-bg-color our_footer">
+    <section class="d-flex justify-content-center p-4">
+        <div class="footer_div">
+            <a href="https://www.facebook.com/ccuigemteam/" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/facebook.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="https://www.instagram.com/ccuigem/" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/instagram.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/twitter.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCgqSdCx7Tj3ZyxOCJNlOADQ" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/youtube.png" alt="" style="height:60px;"></div>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <div class="fab button_floating"><img src="/igem6/img/gmail.png" alt="" style="height:60px;"></div>
+            </a>
+        </div>
+    </section>
+    <div class="text-center p-2" style="color: #ffffff">
+        Copyright © 2022 
+        <a class="text-reset fw-bold" style="text-decoration:none;" href="https://www.ccu.edu.tw/">National Chung Cheng University All rights reserved</a>
+    </div>
+</footer>
+<script src="/igem6/js/bootstrap_js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/bootstrap_js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/igem6/js/jquery-3.6.0.min.js"></script>
+<script src="/igem6/js/main.js"></script>    <script src="/igem6/js/attribution.js"></script>  
+</body>

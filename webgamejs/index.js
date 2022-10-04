@@ -23,6 +23,7 @@ var width=set_width*scale; //the web game real window size(width)
 var height=set_height*scale; //the web game real window size(height)
 var role_x=width/2; //the x coordinate of role when the user back to map
 var role_y=height/2; //the y coordinate of role when the user back to map
+var con;//every storys' parameter. 
 var config;
 var score = 0;
 var scoreText;
@@ -33,6 +34,16 @@ var level=0;
 var send_string="";
 gameOver=false;
 var getUrlString = location.href;
+/* 關卡通關過與否
+   index: 1~5，代表1~5關
+   value: 通關過為1，尚未為0
+*/
+var stage_complete = [];
+console.log('index');
+for(var i=1;i<=5;i++){
+    stage_complete[0]=1;
+    stage_complete[i]=0;
+}
 var url = new URL(getUrlString);
 //alert(location.host+location.pathname);
 var language=url.searchParams.get('lang');
@@ -86,11 +97,23 @@ function loadlanguage(){
     }
     load();
 }
+const stage_0_story={
+    key: 'stage_0_story',
+    preload: preload_story0,
+    create: create_story0,
+    update: update_story0
+}
 const map_1={
     key: 'map_1',
     preload: preload,
     create: create,
     update: update
+}
+const stage_1_story={
+    key: 'stage_1_story',
+    preload: preload_story1,
+    create: create_story1,
+    update: update_story1
 }
 const stage_1_choose={
     key: 'stage_1_choose',
@@ -141,6 +164,9 @@ function load(){
         switch(page){
             case "lobby":
                 load_page(map_1);
+                break;
+            case "story0":
+                load_page(stage_0_story);
                 break;
             case "stage1":
                 load_page(stage_1_choose);
